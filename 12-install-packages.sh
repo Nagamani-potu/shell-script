@@ -19,7 +19,7 @@ N="\e[0m"
 #     fi
 # }
 
-if [$ID -ne 0 ]
+if [ $ID -ne 0 ]
 then
    echo -e " $R ERROR:: please run with root access $N"
    exit 1
