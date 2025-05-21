@@ -9,4 +9,4 @@ echo "$PERSON2: Good Morning $PERSON1"
 echo "$PERSON1: How are you $PERSON2?"
 echo "$PERSON2: I am good, What About You $PERSON1"
 
-echo "date and time is : $DATE"
+echo "date and time is : ${DATE}"
