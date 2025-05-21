@@ -12,7 +12,7 @@ VALIDATE(){
     fi
 }
 
-if [ $? -ne 0 ]
+if [ $ID -ne 0 ]
 then
    echo "ERROR:: Please run with root access"
    exit 1
