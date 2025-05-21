@@ -2,9 +2,9 @@
 
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-R="\033[31m"  # Red
-G="\033[32m"  # Green
-N="\033[0m"   # Reset
+R="\e[31m"  # Red
+G="\e[32m"  # Green
+N="\e[0m"   # Reset
 
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
