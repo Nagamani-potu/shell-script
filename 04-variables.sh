@@ -9,4 +9,4 @@ echo "please engter your username"
 
 read -s USERNAME #the value entered above is automatically attached to username
 
-echo "username is : $USERNAME"
+# echo "username is : $USERNAME"
