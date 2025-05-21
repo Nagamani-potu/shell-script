@@ -2,6 +2,9 @@
 
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
@@ -9,16 +12,16 @@ LOGFILE="/tmp/$0-$TIMESTAMP.log"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
-       echo "ERROR:: $2 is failed"
+       echo -e "ERROR:: $2 is $R failed $N"
        exit 1
     else 
-       echo "$2 is success"
+       echo "$2 is $G success $N"
     fi
 }
 
-if [ $? -ne 0 ]
+if [ ID -ne 0 ]
 then
-   echo "ERROR:: Please run with root access"
+   echo -e "$R ERROR:: Please run with root access $N"
    exit 1
 else
    echo "you are a root user"
